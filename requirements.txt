@@ -1,0 +1,6 @@
+numpy
+pydantic>=2
+pypdf
+pytest
+requests
+sentence-transformers

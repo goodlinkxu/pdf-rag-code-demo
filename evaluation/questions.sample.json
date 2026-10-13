@@ -1,0 +1,5 @@
+[
+  {"id": "q1", "question": "TempQuestions 包含多少个时间问题？分成哪四类？"},
+  {"id": "q2", "question": "MuSiQue 是如何构建的？具有多少种组成结构？"},
+  {"id": "q3", "question": "RECOMP 的抽取式摘要和生成式摘要分别训练什么模型？生成式摘要训练数据由谁生成？"}
+]

@@ -1,0 +1,29 @@
+# 模型、向量、索引缓存
+data/index/*.npy
+data/index/*.jsonl
+data/index/manifest.json
+outputs/
+*.npy
+*.bin
+*.pkl
+*.parquet
+
+# python缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.conda/
+
+# 本地配置，保留config.example.json，忽略真实config
+config.json
+
+# 大文件PDF、作业文档（可选，如果不想上传可以打开下面一行）
+# 作业一/
+
+# 系统文件
+.DS_Store
+Thumbs.db

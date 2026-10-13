@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>论文问答</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/">论文问答<span>课程实验</span></a><a href="/paper" target="_blank" rel="noopener">打开论文 ↗</a></header>
+<main>
+<aside><h2>运行环境</h2><div id="health">正在检查论文与模型…</div><div class="actions"><button id="check" class="secondary">重新检查</button><button id="index" class="secondary">准备检索资料</button></div><p class="muted">首次使用请按 <a href="#help">配置说明</a> 安装环境。资料准备好后可重复提问。</p><h2>最近记录</h2><nav id="history" aria-label="最近问答记录"></nav><details id="help"><summary>配置说明</summary><p>1. 按项目 tutor.md 安装 Python 依赖。</p><p>2. 启动 Ollama，安装配置中的模型。</p><p>3. 点击“准备检索资料”，完成后提问。</p><p>问题与论文发送至配置中的 Ollama 服务，默认在本机运行。首次使用会下载检索模型。</p></details></aside>
+<section class="workspace"><div class="intro"><p class="eyebrow">文献：浅谈大模型时代下的检索增强</p><h1>论文问答</h1><p>输入问题，查看回答和引用原文。</p></div>
+<div class="tabs" role="group" aria-label="提问方式"><button id="single" aria-pressed="true">自由提问</button><button id="batch" aria-pressed="false">三题提交</button></div>
+<form id="form"><div id="questions"></div><div class="form-bottom"><label class="compare"><input type="checkbox" id="compare">同时对比不查论文的回答</label><button id="submit" type="submit">查找并回答</button></div><p id="form-hint" class="muted">每道题独立检索。可以直接询问论文中的概念、方法和实验。</p></form>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<div id="results"></div>
+<div id="empty"><h2>示例问题</h2><p>例如：TempQuestions 包含多少个时间问题？分成哪四类？</p><button id="example" class="secondary">填入这个问题</button></div>
+</section></main><footer>仅检索所选论文 · 引用匹配不能替代内容核对</footer>
+</body></html>

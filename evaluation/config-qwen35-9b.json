@@ -1,0 +1,17 @@
+{
+  "source_pdf": "作业一/文献.pdf",
+  "index_dir": "data/index",
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "embedding_device": "cuda",
+  "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+  "chunk_max_tokens": 400,
+  "chunk_overlap_tokens": 60,
+  "embedding_batch_size": 16,
+  "top_k": 5,
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "generation_model": "qwen3.5:9b",
+  "temperature": 0,
+  "num_ctx": 8192,
+  "num_predict": 1500,
+  "request_timeout_seconds": 300
+}
